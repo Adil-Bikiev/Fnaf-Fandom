@@ -21,7 +21,7 @@ body{
     padding: 0 15px;
 }
 
-.link_li{
+.link_li, .link_lib{
     font-weight: 400;
     font-size: 16px;
     color: white;
@@ -43,12 +43,16 @@ body{
   width: 100%;
 }
 
-
 .esp{
     opacity: 1;
     border-radius: 6px;
     background: #FA9021;
     padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.esp:hover{
+    transform: scale(1.1);
 }
 
 .header__container{
