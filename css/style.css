@@ -68,11 +68,6 @@ body{
     align-items: center;
 }
 
-.main{
-    background-image: url('../assets/images/FNAF.png');
-    height: 100vh;
-}
-
 .main__container-hint{
     color: #E87D0E;
     font-weight: 700;
@@ -105,6 +100,9 @@ body{
 
 .main__section_fst{
     padding-top: 115px;
+    background-image: url('../assets/images/FNAF.png');
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .main__container{
@@ -112,4 +110,72 @@ body{
     flex-direction: column;
     row-gap: 50px;
     align-items: center;
+}
+
+.characters__section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.char__images {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+}
+
+.char__card {
+    position: relative;
+    width: 251px;
+    height: 277px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.char__card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.char__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.char__card:hover img {
+    filter: brightness(40%);
+    transform: scale(1.05);
+}
+
+.char__card:hover .char__overlay {
+    opacity: 1;
+}
+
+.see_all_char{ 
+    border-radius: 10px; 
+    padding: 15px; 
+    background-color: #FFFFFF1C; 
+    color: white; 
+}
+
+.char__title{ 
+    font-weight: 700; 
+    font-size: 31px; 
+    color: white; 
+}
+
+.title-and-button{
+    display: flex;
+    justify-content: space-between;
 }
