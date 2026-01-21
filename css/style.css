@@ -238,3 +238,31 @@ body{
     letter-spacing: 4px;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
+
+.find__title{
+    font-weight: 600;
+    font-size: 30px;
+    color: red;
+}
+
+.find__subtitle{
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+.find__container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.find__section{
+    background-image: url('../assets/images/back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
