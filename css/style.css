@@ -343,6 +343,7 @@ body{
 .logo-footer{
     width: 100px;
     height: 100px;
+    transition: 1s;
 }
 
 .footer__container{
@@ -372,4 +373,5 @@ body{
     padding: 3rem;
     text-align: center;
 }
+
 
