@@ -269,6 +269,47 @@ body{
     align-items: center;
 }
 
+.fnaf-games__container{
+    padding: 5rem;
+}
+
+.slider {
+  width: 1150px; 
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.slides {
+  display: flex;
+  animation: slide 15s linear infinite;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 382px;
+  height: 223px;
+  margin-right: 30px; 
+  user-select: none;
+}
+
+.slide img {
+  width: 382px;
+  height: 223px;
+  object-fit: cover;
+  border-radius: 20px;
+  pointer-events: none; 
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-3900px); } 
+}
+
+@media(max-width: 1200px) {
+  .slider { width: 90%; }
+  .slide img { width: 100%; height: auto; }
+}
+
 .fnaf-about-footer, .fnaf-contact-footer{
     display: flex;
     flex-direction: column;
