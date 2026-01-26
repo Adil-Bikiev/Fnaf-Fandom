@@ -375,3 +375,101 @@ body{
 }
 
 
+
+/* Burger menu */
+.burger {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    display: none;
+    flex-direction: column;
+    row-gap: 6px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+
+.burger span {
+    width: 30px;
+    height: 3px;
+    background: white;
+    transition: 0.3s;
+}
+
+.burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+@media (max-width: 1200px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.4s ease;
+        z-index: 1000;
+        box-shadow: -10px 0 40px rgba(255, 0, 0, 0.15);
+    }
+
+
+    .nav.active {
+        right: 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .char__images {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        row-gap: 40px;
+        text-align: center;
+    }
+
+    .fnaf-icons-social-media {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .main__container-title {
+        font-size: 30px;
+    }
+
+    .btn_about {
+        padding: 8px 22px;
+    }
+
+    .find__section {
+        height: auto;
+        padding: 80px 0;
+    }
+}
