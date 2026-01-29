@@ -100,6 +100,466 @@ body{
 
 /* MAIN */
 
+.main__about-section-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-container-title{
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.about-container-subtitle{
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+}
+
+.about-container-image > img{
+    width: 739px;
+    height: 656px;
+}
+
+.about-container-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.feedback-blocks{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback-block {
+    width: 378px;
+    height: 348px;
+    background: #1C140F;
+    box-shadow: 
+        0px 4px 94px 0px #00000026,
+        inset 0 0 0 1px rgba(139, 69, 19, 0.4); 
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.feedback-block::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 2px solid rgba(184, 134, 11, 0.3);
+    border-radius: 15px;
+    pointer-events: none;
+    box-shadow: 
+        inset 0 0 20px rgba(0, 0, 0, 0.5),
+        0 0 15px rgba(139, 69, 19, 0.2);
+}
+
+.feedback-block::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 1px solid rgba(218, 165, 32, 0.15);
+    border-radius: 12px;
+    pointer-events: none;
+}
+
+.feedback-text{
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.feedback-name{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.created-section-container{
+    padding-top: 4rem;
+    display: flex;
+    column-gap: 20px;
+}
+
+.created-container-text{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.created-container-sub-subtitle{
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.created-title{
+    color: white;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.created-subtitle{
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.created-container-image > img{
+    width: 700px;
+    height: 490px;
+}
+
+.creators-section {
+    padding: 60px 0;
+    background: #0a0a0a;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    position: relative;
+}
+
+.creators-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.creators-header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.system-alert {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    animation: pulse 2s infinite;
+}
+
+.creators-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff3333;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.creators-subtitle {
+    color: #8f8;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.creators-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.creator-card {
+    background: #111;
+    border: 1px solid #444;
+    padding: 20px;
+    position: relative;
+    min-height: 150px;
+    transition: all 0.3s ease;
+}
+
+.creator-card:hover {
+    border-color: #ff3333;
+    background: #151515;
+    transform: translateY(-5px);
+}
+
+.card-corner {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #8f8;
+}
+
+.tl { top: 5px; left: 5px; border-right: none; border-bottom: none; }
+.tr { top: 5px; right: 5px; border-left: none; border-bottom: none; }
+.bl { bottom: 5px; left: 5px; border-right: none; border-top: none; }
+.br { bottom: 5px; right: 5px; border-left: none; border-top: none; }
+
+.creator-content {
+    text-align: center;
+}
+
+.creator-id {
+    color: #8f8;
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.creator-name {
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 10px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.creator-role {
+    color: #ffa500;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.creator-status {
+    color: #0f0;
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border: 1px solid #0f0;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.creator-status.active {
+    color: #0f0;
+    border-color: #0f0;
+}
+
+.system-status {
+    text-align: center;
+    padding: 15px;
+    background: #111;
+    border: 1px solid #444;
+    position: relative;
+}
+
+.status-line {
+    height: 1px;
+    background: #333;
+    margin-bottom: 10px;
+}
+
+.status-text {
+    color: #8f8;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.creator-description{
+    padding-top: 10px;
+    color: white;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+@media (max-width: 768px) {
+    .creators-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .creators-title {
+        font-size: 1.5rem;
+    }
+    
+    .creator-name {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .creators-grid {
+        grid-template-columns: 1fr;
+        max-width: 250px;
+        margin: 0 auto 30px;
+    }
+    
+    .system-status {
+        padding: 10px;
+    }
+}
+
+.email-section {
+    padding: 60px 0;
+    background: #111;
+    border-top: 2px solid #333;
+}
+
+.email-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.email-content {
+    text-align: center;
+}
+
+.email-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: inline-block;
+    filter: drop-shadow(0 0 5px rgba(255, 51, 51, 0.3));
+}
+
+.email-title {
+    color: #ff3333;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.email-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: #ff3333;
+}
+
+.email-description {
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.email-input {
+    flex: 1;
+    padding: 12px 15px;
+    background: #1a1a1a;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.email-input:focus {
+    outline: none;
+    border-color: #ff3333;
+    box-shadow: 0 0 0 1px rgba(255, 51, 51, 0.2);
+}
+
+.email-input::placeholder {
+    color: #666;
+    letter-spacing: 0.5px;
+}
+
+.submit-btn {
+    padding: 12px 25px;
+    background: #8b0000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border: 1px solid #ff3333;
+}
+
+.submit-btn:hover {
+    background: #ff3333;
+    transform: translateY(-2px);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.system-notice {
+    background: rgba(30, 30, 30, 0.8);
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 10px 15px;
+    color: #8f8;
+    font-size: 0.8rem;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.notice-icon {
+    color: #ffa500;
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .email-title {
+        font-size: 1.6rem;
+    }
+    
+    .email-description {
+        font-size: 0.95rem;
+        padding: 0 10px;
+    }
+    
+    .form-group {
+        flex-direction: column;
+    }
+    
+    .email-input,
+    .submit-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .email-section {
+        padding: 40px 0;
+    }
+    
+    .email-title {
+        font-size: 1.4rem;
+    }
+    
+    .email-icon {
+        font-size: 2.5rem;
+    }
+}
+
 .fnaf-about-footer, .fnaf-contact-footer{
     display: flex;
     flex-direction: column;
