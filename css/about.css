@@ -661,3 +661,403 @@ body{
         row-gap: 30px;
     }
 }
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    
+    .about-container-image > img {
+        width: 600px;
+        height: 500px;
+    }
+    
+    .created-container-image > img {
+        width: 600px;
+        height: 420px;
+    }
+    
+    .feedback-blocks {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .feedback-block {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .main__about-section-container {
+        flex-direction: column;
+        gap: 40px;
+        padding: 60px 20px;
+    }
+    
+    .about-container-text {
+        text-align: center;
+        max-width: 800px;
+    }
+    
+    .about-container-title {
+        font-size: 26px;
+    }
+    
+    .about-container-subtitle {
+        font-size: 14px;
+    }
+    
+    .about-container-image > img {
+        width: 100%;
+        height: auto;
+        max-width: 700px;
+    }
+    
+    .created-section-container {
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 60px;
+    }
+    
+    .created-container-text {
+        text-align: center;
+        order: -1;
+    }
+    
+    .created-container-image > img {
+        width: 100%;
+        height: auto;
+        max-width: 700px;
+    }
+    
+    .created-title {
+        font-size: 24px;
+    }
+    
+    .created-subtitle {
+        font-size: 14px;
+    }
+    
+    .feedback-section-title {
+        font-size: 32px;
+    }
+    
+    .creators-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+        padding: 0 20px;
+    }
+    
+    .main__about-section-container {
+        padding: 40px 15px;
+        gap: 30px;
+    }
+    
+    .about-container-title {
+        font-size: 22px;
+    }
+    
+    .about-container-subtitle {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+    
+    .created-section-container {
+        padding-top: 40px;
+        gap: 30px;
+    }
+    
+    .created-title {
+        font-size: 20px;
+    }
+    
+    .created-container-sub-subtitle {
+        font-size: 14px;
+    }
+    
+    .created-subtitle {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+    
+    .feedback-section {
+        padding: 40px 0;
+    }
+    
+    .feedback-section-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
+    .feedback-blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feedback-block {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+        padding: 2rem;
+    }
+    
+    .feedback-name {
+        font-size: 18px;
+    }
+    
+    .feedback-text {
+        font-size: 13px;
+    }
+    
+    .creators-section {
+        padding: 40px 0;
+    }
+    
+    .creators-title {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    
+    .creators-subtitle {
+        font-size: 13px;
+    }
+    
+    .creators-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .creator-card {
+        padding: 20px 15px;
+        min-height: 180px;
+    }
+    
+    .creator-name {
+        font-size: 16px;
+    }
+    
+    .creator-description {
+        font-size: 12px;
+    }
+    
+    .email-section {
+        padding: 40px 0;
+    }
+    
+    .email-title {
+        font-size: 24px;
+    }
+    
+    .email-description {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    
+    .form-group {
+        flex-direction: column;
+    }
+    
+    .email-input, .submit-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .about-container-title {
+        font-size: 20px;
+    }
+    
+    .about-container-subtitle {
+        font-size: 12px;
+    }
+    
+    .created-title {
+        font-size: 18px;
+    }
+    
+    .created-subtitle {
+        font-size: 12px;
+    }
+    
+    .feedback-section-title {
+        font-size: 24px;
+    }
+    
+    .feedback-block {
+        height: 280px;
+        padding: 1.5rem;
+    }
+    
+    .feedback-name {
+        font-size: 16px;
+    }
+    
+    .feedback-text {
+        font-size: 12px;
+    }
+    
+    .creators-title {
+        font-size: 20px;
+    }
+    
+    .creators-grid {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        margin: 0 auto 30px;
+    }
+    
+    .creator-card {
+        min-height: 170px;
+    }
+    
+    .creator-name {
+        font-size: 15px;
+    }
+    
+    .creator-role {
+        font-size: 12px;
+    }
+    
+    .creator-description {
+        font-size: 11px;
+    }
+    
+    .email-title {
+        font-size: 20px;
+    }
+    
+    .email-description {
+        font-size: 13px;
+    }
+    
+    .system-notice {
+        font-size: 11px;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-container-title {
+        font-size: 18px;
+    }
+    
+    .about-container-subtitle {
+        font-size: 11px;
+    }
+    
+    .created-title {
+        font-size: 17px;
+    }
+    
+    .created-container-sub-subtitle {
+        font-size: 13px;
+    }
+    
+    .created-subtitle {
+        font-size: 11px;
+    }
+    
+    .feedback-section-title {
+        font-size: 22px;
+    }
+    
+    .feedback-block {
+        height: 260px;
+        padding: 1.2rem;
+    }
+    
+    .creators-title {
+        font-size: 18px;
+    }
+    
+    .creators-subtitle {
+        font-size: 12px;
+    }
+    
+    .creator-card {
+        padding: 15px;
+    }
+    
+    .creator-id {
+        font-size: 11px;
+    }
+    
+    .creator-name {
+        font-size: 14px;
+    }
+    
+    .email-title {
+        font-size: 18px;
+    }
+    
+    .email-icon {
+        font-size: 2.2rem;
+    }
+    
+    .email-input {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+    
+    .submit-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    .about-container-title {
+        font-size: 16px;
+    }
+    
+    .created-title {
+        font-size: 16px;
+    }
+    
+    .feedback-section-title {
+        font-size: 20px;
+    }
+    
+    .feedback-block {
+        height: 250px;
+        padding: 1rem;
+    }
+    
+    .creators-title {
+        font-size: 17px;
+    }
+    
+    .creators-grid {
+        max-width: 280px;
+    }
+    
+    .email-title {
+        font-size: 17px;
+    }
+}
+
+@media (max-height: 700px) and (orientation: landscape) {
+    .feedback-block {
+        height: 240px;
+        padding: 1.5rem;
+    }
+    
+    .creator-card {
+        min-height: 140px;
+    }
+}
