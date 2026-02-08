@@ -124,6 +124,18 @@ body{
     padding: 20px 0;
 }
 
+.responsive-video{
+    text-align: center;
+}
+
+.responsive-video video {
+    width: 800px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .game-card {
     width: 280px;
     background: #1a1a2e;
