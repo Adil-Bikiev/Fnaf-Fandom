@@ -99,6 +99,23 @@ body{
 }
 
 /* MAIN GAMES SECTION */
+.games-container{
+    text-align: center;
+    padding: 2rem;
+}
+
+.games-title{
+    font-weight: 600;
+    font-size: 33px;
+    color: white;
+}
+
+.games-subtitle{
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
 .fnaf-games-flex {
     display: flex;
     flex-wrap: wrap;
