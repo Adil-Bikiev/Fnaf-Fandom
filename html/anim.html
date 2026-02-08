@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/icons/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <title>Gallery | FNaF Fan Art</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <a class="logo_link_adapt" href="../index.html">
+                <img class="logo" src="../assets/icons/logo.svg" alt="">
+            </a>
+            
+            <div class="nav">
+                <ul class="menu">
+                    <li class="menu_li"><a href="../index.html" class="link_li">Home</a></li>
+                    <li class="menu_li"><a href="./about.html" class="link_li">About Us</a></li>
+                    <li class="menu_li"><a href="./games.html" class="link_li">Games</a></li>
+                    <li class="menu_li"><a style="color: red;" href="./gallery.html" class="link_li">Gallery</a></li>
+                    <li class="menu_li"><a href="./lore.html" class="link_li">Lore</a></li>
+                    <li class="menu_li esp"><a href="./secrets.html" class="link_lib">Secrets & Trivia</a></li>
+                </ul>
+            </div>
+            
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main__gallery">
+        <section class="gallery-hero">
+            <div class="container">
+                <h1 class="gallery-hero-title">FNaF Fan Art Gallery</h1>
+                <p class="gallery-hero-subtitle">The best community artworks from talented artists worldwide</p>
+            </div>
+        </section>
+
+        <section class="gallery-content">
+            <div class="container">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search by tag: freddy, bonnie, chica, foxy, springtrap...">
+                    <button id="search-btn">Search</button>
+                    <button id="clear-btn">Clear</button>
+                </div>
+
+                <!-- Gallery Flex Container -->
+                <div class="arts-flex">
+                    <!-- Art 1 -->
+                    <div class="art-card">
+                        <div class="art-image">
+                            <img src="../assets/images/gallery1.png" alt="Freddy Fazbear art">
+                        </div>
+                        <div class="art-info">
+                            <h3 class="art-title">Night Guard</h3>
+                            <p class="art-artist">By: FazbearFan42</p>
+                            <div class="art-tags">
+                                <span class="art-tag">Freddy</span>
+                                <span class="art-tag">Digital</span>
+                                <span class="art-tag">2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Art 2 -->
+                    <div class="art-card">
+                        <div class="art-image">
+                            <img src="../assets/images/gallery2.png" alt="Bonnie art">
+                        </div>
+                        <div class="art-info">
+                            <h3 class="art-title">Guitar in the Dark</h3>
+                            <p class="art-artist">By: RabbitRun</p>
+                            <div class="art-tags">
+                                <span class="art-tag">Bonnie</span>
+                                <span class="art-tag">Traditional</span>
+                                <span class="art-tag">2022</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Art 3 -->
+                    <div class="art-card">
+                        <div class="art-image">
+                            <img src="../assets/images/gallery3.png" alt="Chica art">
+                        </div>
+                        <div class="art-info">
+                            <h3 class="art-title">Kitchen Melody</h3>
+                            <p class="art-artist">By: CupcakeLover</p>
+                            <div class="art-tags">
+                                <span class="art-tag">Chica</span>
+                                <span class="art-tag">Digital</span>
+                                <span class="art-tag">Colorful</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Art 4 -->
+                    <div class="art-card">
+                        <div class="art-image">
+                            <img src="../assets/images/gallery4.png" alt="Foxy art">
+                        </div>
+                        <div class="art-info">
+                            <h3 class="art-title">Run to Pirate's Cove</h3>
+                            <p class="art-artist">By: PirateCoveArt</p>
+                            <div class="art-tags">
+                                <span class="art-tag">Foxy</span>
+                                <span class="art-tag">Dynamic</span>
+                                <span class="art-tag">2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Art 5 -->
+                    <div class="art-card">
+                        <div class="art-image">
+                            <img src="../assets/images/gallery5.png" alt="Springtrap art">
+                        </div>
+                        <div class="art-info">
+                            <h3 class="art-title">Living Legend</h3>
+                            <p class="art-artist">By: HorrorArtist</p>
+                            <div class="art-tags">
+                                <span class="art-tag">Springtrap</span>
+                                <span class="art-tag">Horror</span>
+                                <span class="art-tag">2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Art 6 -->
+                    <div class="art-card">
+                        <div class="art-image">
+                            <img src="../assets/images/gallery6.png" alt="Group art">
+                        </div>
+                        <div class="art-info">
+                            <h3 class="art-title">The Whole Gang</h3>
+                            <p class="art-artist">By: FazbearTeam</p>
+                            <div class="art-tags">
+                                <span class="art-tag">Freddy</span>
+                                <span class="art-tag">Bonnie</span>
+                                <span class="art-tag">Chica</span>
+                                <span class="art-tag">Foxy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="no-results" class="no-results">
+                    <p>No artworks found. Try another search term.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-cta">
+            <div class="container">
+                <h2 class="cta-title">Want to Submit Your Art?</h2>
+                <p class="cta-text">Share your FNaF fan art with the community!</p>
+                <a href="mailto:example@example.com" class="submit-btn">Submit Your Artwork</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="fnaf-logo-footer">
+                <img class="logo-footer" src="../assets/icons/logo.svg" alt="">
+                <p class="fnaf-logo-footer-subtitle paragraph-footer">
+                    They're watching... <br> even when you can't see.
+                </p>
+                <a target="_blank" style="color: white;" href="https://en.wikipedia.org/wiki/Five_Nights_at_Freddy%27s" class="fnaf-logo-footer-link">@FNAF</a>
+            </div>
+
+            <div class="fnaf-about-footer">
+                <p class="fnaf-about-footer-title">About us</p>
+                <div class="fnaf-about-footer-links">
+                    <a href="../html/about.html" class="fnaf-about-footer-link paragraph-footer">More information</a>
+                    <a href="https://github.com/Adil-Bikiev" class="fnaf-about-footer-portfolio paragraph-footer">Portfolio</a>
+                    <a href="../index.html" class="fnaf-about-footer-contact-us paragraph-footer">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="fnaf-contact-footer">
+                <p class="fnaf-about-footer-title">Contact Us</p>
+                <div class="fnaf-contact-footer-links">
+                    <p class="fnaf-contact-footer-subtitle paragraph-footer">Hope this helps you understand <br> what the game is about.</p>
+                    <p class="fanf-contact-footer-number paragraph-footer">+0 000 000 000</p>
+                </div>
+            </div>
+
+            <div class="fnaf-icons-social-media">
+                <img src="../assets/images/Facebook.png" alt="" class="fnaf-icon-social-media">
+                <img src="../assets/images/Inst.png" alt="" class="fnaf-icon-social-media">
+                <img src="../assets/images/X.png" alt="" class="fnaf-icon-social-media">
+                <img src="../assets/images/Linkedin.png" alt="" class="fnaf-icon-social-media">
+            </div>
+        </div>
+        <hr>
+        <p class="footer-lower-subtitle">Copyright ® 2021 Lorem All rights Reserved</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/gallery.js"></script>
+</body>
+</html>
