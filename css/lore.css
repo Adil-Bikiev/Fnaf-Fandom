@@ -1,4 +1,3 @@
-/* ===== BASE STYLES ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -12,6 +11,7 @@
 }
 
 body {
+    overflow-x: hidden;
     background: #000;
     color: white;
 }
@@ -23,11 +23,27 @@ body {
     padding: 0 15px;
 }
 
-/* ===== HEADER ===== */
+/*  HEADER  */
 .link_li, .link_lib {
     font-weight: 400;
     font-size: 16px;
     color: white;
+    position: relative;
+}
+
+.link_li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s ease;
+}
+
+.link_li:hover::after {
+    width: 100%;
 }
 
 .link_li:hover {
@@ -35,13 +51,15 @@ body {
 }
 
 .esp {
+    opacity: 1;
     border-radius: 6px;
     background: #FA9021;
     padding: 10px;
+    transition: transform 0.3s ease;
 }
 
 .esp:hover {
-    background: #ff9900;
+    transform: scale(1.1);
 }
 
 .header__container {
@@ -57,20 +75,37 @@ body {
     align-items: center;
 }
 
+/* Burger menu */
 .burger {
+    position: fixed;
+    top: 30px;
+    right: 30px;
     display: none;
     flex-direction: column;
     row-gap: 6px;
     cursor: pointer;
+    z-index: 1100;
 }
 
 .burger span {
     width: 30px;
     height: 3px;
     background: white;
+    transition: 0.3s;
 }
 
-/* ===== LORE HERO ===== */
+.burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
 .lore-hero {
     text-align: center;
     padding: 60px 0 40px;
@@ -93,7 +128,6 @@ body {
     margin: 0 auto;
 }
 
-/* ===== TIMELINE ===== */
 .timeline {
     padding: 40px 0 80px;
 }
@@ -102,7 +136,6 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 60px;
-    position: relative;
 }
 
 .game-number {
@@ -177,7 +210,6 @@ body {
     line-height: 1.6;
 }
 
-/* ===== NOTES SECTION ===== */
 .lore-notes {
     background: rgba(26, 26, 46, 0.8);
     padding: 60px 0;
@@ -228,7 +260,7 @@ body {
     line-height: 1.6;
 }
 
-/* ===== FOOTER ===== */
+/*  FOOTER  */
 .fnaf-about-footer, .fnaf-contact-footer {
     display: flex;
     flex-direction: column;
@@ -264,6 +296,7 @@ body {
 .logo-footer {
     width: 100px;
     height: 100px;
+    transition: 1s;
 }
 
 .footer__container {
@@ -296,6 +329,34 @@ hr {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1200px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.4s ease;
+        z-index: 1000;
+        box-shadow: -10px 0 40px rgba(255, 0, 0, 0.15);
+    }
+
+    .nav.active {
+        right: 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    
     .game-content {
         gap: 25px;
     }
@@ -338,24 +399,6 @@ hr {
 }
 
 @media (max-width: 768px) {
-    .burger {
-        display: flex;
-    }
-
-    .nav {
-        display: none;
-    }
-
-    .nav.active {
-        display: block;
-    }
-
-    .menu {
-        flex-direction: column;
-        row-gap: 30px;
-        align-items: center;
-    }
-    
     .game-item {
         flex-direction: column;
         align-items: flex-start;
