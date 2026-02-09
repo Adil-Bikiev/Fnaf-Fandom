@@ -22,8 +22,14 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Search through each card
         artCards.forEach(card => {
-            const tags = card.getAttribute('data-tags').toLowerCase();
-            const title = card.querySelector('.art-title').textContent.toLowerCase();
+            // Собираем все теги из .art-tag
+            const tagElements = card.querySelectorAll('.art-tag');
+            const tags = Array.from(tagElements)
+                .map(tag => tag.textContent.toLowerCase())
+                .join(' ');
+
+            const titleElement = card.querySelector('.art-title');
+            const title = titleElement ? titleElement.textContent.toLowerCase() : '';
             
             // Check if search term matches tags or title
             if (tags.includes(searchTerm) || title.includes(searchTerm)) {
@@ -43,20 +49,26 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Event listeners
-    searchBtn.addEventListener('click', searchArtworks);
+    if (searchBtn) {
+        searchBtn.addEventListener('click', searchArtworks);
+    }
     
-    searchInput.addEventListener('keyup', function(event) {
-        if (event.key === 'Enter') {
+    if (searchInput) {
+        searchInput.addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                searchArtworks();
+            }
+        });
+    }
+    
+    if (clearBtn) {
+        clearBtn.addEventListener('click', function() {
+            searchInput.value = '';
             searchArtworks();
-        }
-    });
+        });
+    }
     
-    clearBtn.addEventListener('click', function() {
-        searchInput.value = '';
-        searchArtworks();
-    });
-    
-    // Optional: Show tag suggestions when clicking on tags
+    // Click on tag = search by that tag
     const tagElements = document.querySelectorAll('.art-tag');
     tagElements.forEach(tag => {
         tag.addEventListener('click', function() {
