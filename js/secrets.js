@@ -38,10 +38,21 @@ function easterEgg(number) {
 function audioDeath(){
     const audio = new Audio('../assets/audio/scary1.mp3')
     audio.play();
+
+    audio.onended = function () {
+        let btn = document.querySelector('.poster-container');
+        btn.style.pointerEvents = 'auto';
+        btn.style.opacity = '1';
+    }
 }
 
 function musicStart() {
     const audioOne = new Audio('../assets/audio/scary.mp3');
+    let btn = document.querySelector('.poster-container')
+
+    btn.style.pointerEvents = 'none';
+    btn.style.opacity = '0.7';
+
     audioOne.play();
     audioOne.onended = function () {
         audioDeath();
