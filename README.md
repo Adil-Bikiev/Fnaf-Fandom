@@ -227,4 +227,5 @@ All content is used under **fair use** for non-commercial, educational, and fan 
 
 **Adil Bikiev**  
 - **GitHub:** [Adil-Bikiev](https://github.com/Adil-Bikiev)
-
+**bekuuu1**
+- **GitHub:** [bekuuu1](https://github.com/bekuuu1)
