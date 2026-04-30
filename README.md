@@ -242,7 +242,7 @@ All content is used under **fair use** for non-commercial, educational, and fan 
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Team Members
 
 **Adil Bikiev - Team Lead, Frontend Development**  
 - **GitHub:** [Adil-Bikiev](https://github.com/Adil-Bikiev)
