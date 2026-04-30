@@ -207,6 +207,20 @@ function triggerEasterEgg(code) {
 
 ---
 
+## Challenges & Learning
+
+**Challenges:**
+- JavaScript was the most difficult part — implementing interactivity and dynamic behavior required significant effort
+- Responsive design (adaptive layout) was tricky to get right across different screen sizes
+- Even in HTML/CSS, centering elements sometimes behaved unexpectedly and required debugging
+
+**What We Learned:**
+- Responsive layout
+- Working with JavaScript and making pages interactive
+- Team collaboration
+
+---
+
 ## 📄 Pages Overview
 
 | Page | Description | Key Feature |
