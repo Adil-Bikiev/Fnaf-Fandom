@@ -244,8 +244,8 @@ All content is used under **fair use** for non-commercial, educational, and fan 
 
 ## 👨‍💻 Author
 
-**Adil Bikiev**  
+**Adil Bikiev - Team Lead, Frontend Development**  
 - **GitHub:** [Adil-Bikiev](https://github.com/Adil-Bikiev)
 
-**Beknur Berdibaev**
+**Beknur Berdibaev Frontend Development**
 - **GitHub:** [bekuuu1](https://github.com/bekuuu1)
