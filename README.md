@@ -1,6 +1,6 @@
 # 🎬 Five Nights at Freddy's Wiki | FNAF Fandom
 
-## 🎯 Description
+## Description
 A meticulously crafted fan-made interactive wiki dedicated to the **Five Nights at Freddy's** universe.  
 Built out of passion for the FNAF franchise and a desire to practice frontend skills through 
 a themed, immersive project.
